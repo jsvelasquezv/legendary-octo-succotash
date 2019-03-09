@@ -1,14 +1,164 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  -moz-osx-font-smoothing: grayscale; 
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.navbar {
+  height: 80px;
+  background: white;
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  z-index: 10;
+}
+
+.navbar .container {
+  display: flex;
+  flex-direction: row;
+  width: 980px;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  margin-right: 20px;
+}
+
+.navbar-logo img {
+  height: 60px;
+}
+
+.navbar-menu {
+  display: flex;
+  height: 80px;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+}
+
+.navbar-menu-item {
+  list-style: none;
+  margin-right: 15px;
+  margin-left: 15px
+}
+
+.navbar-menu-item a {
+  text-decoration: none;
+  color: #4c5656;
+}
+
+.navbar-menu-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-left: auto;
+}
+
+.navbar-menu-buttons button {
+  background-color: transparent;
+  color: #4c5656;
+  border: #b8b9bb 1px solid;
+  border-radius: 3px;
+  margin: 20px 10px 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: auto;
+  font-size: 16px;
+}
+
+.navbar-menu-buttons button.success {
+  background-color: #19c27f;
+  color: white;
+  border: 1px #19c27f solid;
+  font-weight: 500;
+}
+
+.content {
+  background-color: #E9EBEE;
+  height: 100%;
+}
+
+.content-container {
+  width: 1024px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 60px auto;
+}
+
+.course-list-container {
+  width: 74%;
+  background-color: white;
+}
+
+.results-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page-info {
+  margin-left: 25px;
+  font-weight: 500;
+}
+
+.sorted-by {
+  margin-right: 25px;
+  font-size: 14px;
+}
+
+.sorted-by-select {
+  margin-left: 15px;
+  padding: 10px;
+  background-color: transparent;
+  border-radius: 3px;
+  font-size: 14px
+}
+
+.sorted-by-select::after {
+  display: inline-block;
+  margin-left: .255em;
+  vertical-align: .15em;
+  content: "";
+  border-top: .255em solid;
+  border-right: .255em solid transparent;
+  border-bottom: 0;
+  border-left: .255em solid transparent;
+}
+
+.course-list {
+  width: 95%;
+  padding: 0;
+  margin: auto;
+}
+
+.pagination {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 300px;
+  margin: 10px auto;
+}
+
+.pagination button {
+  font-size: 14px;
+  color: rgb(96, 150, 250);
+  background-color: transparent;
+  padding: 10px 15px;
+  border-radius: 3px;
 }

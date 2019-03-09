@@ -1,0 +1,87 @@
+.search-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #1a5796;
+  width: 100%;
+  height: 220px;
+}
+
+.search-selectors {
+  display: flex;
+  flex-direction: row;
+  font-size: 24px;
+  margin-bottom: 14px;
+}
+
+.search-selectors button {
+  background-color: transparent;
+  color: white;
+  border: white 1px solid;
+  border-radius: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 15px 8px 15px;
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.search-selectors button::after {
+  display: inline-block;
+  margin-left: .255em;
+  vertical-align: .15em;
+  content: "";
+  border-top: .255em solid;
+  border-right: .255em solid transparent;
+  border-bottom: 0;
+  border-left: .255em solid transparent;
+}
+
+.search-selectors p {
+  color: white;
+}
+
+.search-box object{
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.search-box{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  height: 45px;
+  width: 615px;
+  background-color: white;
+  border-radius: 3px;
+  margin-bottom: 20px
+}
+
+.search-input {
+  color: #4c5656;
+  font-size: 16px;
+  width: 80%;
+  border: none;
+  outline: 0;
+}
+
+.tabs .tab {
+  font-weight: 400;
+  font-size: 14px;
+  text-decoration: none;
+  color: white;
+  margin: 0 5px;
+}
+
+.tab a {
+  padding: 20px 8px;
+  color: #b8b9bb;
+  text-decoration: none;
+}
+
+.tabs .tab.active a {
+  color: white;
+  box-shadow: inset 0 -3px 0 #19c27f;
+}
